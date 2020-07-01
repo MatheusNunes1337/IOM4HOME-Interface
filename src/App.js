@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from './components/header';
-import Footer from './components/footer';
+import Home from './pages/home';
+
 
 
 function App() {
   return (
-    <div>
-      <Header>Iom4home interface</Header>
-    </div>
+    <Home></Home>
   );
 }
 

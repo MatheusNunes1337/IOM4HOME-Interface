@@ -1,6 +1,6 @@
 @font-face{
 	font-family: "Nirmala";
-	src: url("../fonts/Nirmala.ttf") format("truetype");
+	src: url("../assets/fonts/Nirmala.ttf") format("truetype");
 }
 body, html{
 	width: 100%;
@@ -64,7 +64,7 @@ h1{
 	list-style: none;
 }
 .locais ul li{
-	display: inline-block; kris
+	display: inline-block;
 	margin-top: 10px;
 }
 .locais ul li span{
