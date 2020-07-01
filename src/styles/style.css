@@ -1,0 +1,217 @@
+@font-face{
+	font-family: "Nirmala";
+	src: url("../fonts/Nirmala.ttf") format("truetype");
+}
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Nirmala;
+	background-color: #f8fcf9;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+     background-size: 100% 100%;
+}
+h1{
+	color: #f8fcf9;
+	margin: 0;
+	padding: 0;
+	margin-left: 360px;
+	margin-top: 40px;
+	position: absolute;
+}
+.topo{
+	width: 100%;
+	height: 95px;
+	background-color: #1f703d;
+}
+.rodape{
+	width: 100%;
+	height: 57px;
+	clear: both;
+	background-color: #1f703d;
+}
+.conteudo{
+	background-color: #f8fcf9;
+	display: flex;
+	align-items: flex-start;
+}
+.user{
+	width: 118px;
+	height: 118px;
+}
+.icone{
+	width: 135px;
+	height: 135px;
+}
+.principal {
+	width: 100%;
+	margin-left: 80px;
+}
+
+/*testes kris*/
+.locais{
+	width: 100%;
+	display: block;
+}
+.locais ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.locais ul li{
+	display: inline-block; kris
+	margin-top: 10px;
+}
+.locais ul li span{
+	display: block;
+	color: #249e50;
+	text-align: center;
+	font-size: 18px;
+}
+.alertas {
+	display: inline-flex;
+	margin: 0;
+	margin-top: -10px;
+	float: left;
+}
+.alertas ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.alertas ul li {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+.alertas ul li img{
+	float: left;
+}
+.alertas ul li div {
+	display: inline-block;
+	clear: both;
+}
+.alertas ul li div h2 {
+	margin: 0;
+	padding: 0;
+	color: #e66f54;
+}
+.alertas ul li div span {
+	background-color: #2b7747;
+	color: #FFF;
+	border-radius: 5px;
+	padding: 1px 8px;
+	display: inline-block;
+	font-size: 12px;
+}
+.alertas ul li div span:last-child {
+	background-color: transparent;
+	color: #e66f54;
+	font-size: 16px;
+}
+.btn-nav {
+	background-color: transparent;
+	border: 2px solid #c2c3bf;
+	color: #c2c3bf;
+	padding: 30px 60px;
+	font-size: 20px;
+	border-radius: 10px; 
+	display: block;
+	width: 219px;
+	height: 96px;
+	margin-bottom: 15px;
+}
+.barra_lateral{
+	display: inline-table;
+	text-align: center;
+	margin-top: -59px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.user{
+	display: block;
+	margin: auto;
+}
+.img_user{
+	width: 118px;
+	height: 118px;
+	float: left;
+	border: solid 1px #c7c3c2;
+	border-radius: 50%;
+}
+.icone_user{
+	width: 68px;
+	height: 68px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -36px;
+}
+.nome_user{
+	color: #6dc08b;
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+}
+.navegue{
+	color: #6dc08b;
+	font-size: 20px;
+	display: block;
+}
+.icone_baixo{
+	margin-top: -30px;
+}
+.passa{
+	width: 68px;
+	height: 68px;
+	position: absolute;
+	display: inline-block;
+	position: absolute;
+	/*margin-top: -45px;*/
+}
+
+@media (max-width: 660px){
+	
+	.topo h1 {
+		display: none;
+	}
+	.conteudo {
+		display: block;
+	}
+	.barra_lateral {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.barra_lateral a {
+		display: block;
+	}
+	.btn-nav {
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	.principal {
+		margin: auto;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.locais ul {
+		text-align: center;
+	}
+	.alertas ul li {
+		display: block;
+		text-align: center;
+	}
+	.alertas ul li img {
+		display: block;
+		margin: auto;
+		float: none;
+	}
+
+}
