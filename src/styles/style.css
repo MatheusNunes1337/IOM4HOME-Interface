@@ -26,19 +26,20 @@ h1{
 }
 .topo{
 	width: 100%;
-	height: 95px;
+	min-height: 10vh;
 	background-color: #1f703d;
 }
 .rodape{
 	width: 100%;
-	height: 57px;
-	clear: both;
+	min-height: 5vh;
+	/*clear: both;*/
 	background-color: #1f703d;
 }
 .conteudo{
 	background-color: #f8fcf9;
 	display: flex;
 	align-items: flex-start;
+	min-height: 85vh;
 }
 .user{
 	width: 118px;
@@ -58,23 +59,27 @@ h1{
 	width: 100%;
 	display: block;
 }
+
+/*
 .locais ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	/*display: flex;
-	align-items: center*/;
+	display: flex;
+	align-items: center;
 }
 .locais ul li{
 	display: inline-block;
 	margin-top: 10px;
-}
+} 
 .locais ul li span{
 	display: block;
 	color: #249e50;
 	text-align: center;
 	font-size: 18px;
 }
+
+
 .alertas {
 	display: inline-flex;
 	margin: 0;
@@ -116,6 +121,7 @@ h1{
 	color: #e66f54;
 	font-size: 16px;
 }
+*/
 .btn-nav {
 	background-color: transparent;
 	border: 2px solid #c2c3bf;
@@ -126,7 +132,8 @@ h1{
 	display: block;
 	width: 219px;
 	height: 96px;
-	margin-bottom: 15px;
+	margin: 25px 0px;
+
 }
 .barra_lateral{
 	display: inline-table;
@@ -174,6 +181,41 @@ h1{
 	display: inline-block;
 	/*position: absolute;*/
 	/*margin-top: -100px;*/
+}
+
+.comodos, .funcoes {
+	margin: 40px 0px;
+	margin-right: 40px;
+	display: flex;
+}
+
+.interact_btn {
+	margin-right: 40px;
+}
+
+.principal button {
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 2px solid #c2c3bf;
+	color: black;
+	outline: none;
+	background: transparent;
+}
+
+.principal button:hover {
+	background: #1f703d;
+	border: 2px solid #1f703d;
+	color: white;
+}
+
+.principal span {
+	display: block;
+	color: #249e50;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 5px;
 }
 
 @media (max-width: 660px){

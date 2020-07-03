@@ -11,7 +11,7 @@ export default function Aside() {
 			<span className="nome_user">Vinícios da Costa</span>
 			<span className="navegue">navegue por...</span>
 			<a href="aa"><button className="btn-nav">Função</button></a>
-			<a href="ambientes/ambientes.html"><button class="btn-nav">Ambiente</button></a>
+			<a href="ambientes/ambientes.html"><button className="btn-nav">Ambiente</button></a>
 			<img src={require('../assets/images/logo.png')} alt="logo"/>    
         </aside>
   );
