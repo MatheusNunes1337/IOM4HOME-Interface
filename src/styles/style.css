@@ -188,7 +188,7 @@ h1{
 }
 
 .comodos, .funcoes {
-	margin: 40px 0px;
+	margin: 20px 0px;
 	margin-right: 40px;
 	display: flex;
 	flex-wrap: wrap;
@@ -196,7 +196,7 @@ h1{
 
 
 .interact_btn {
-	margin-right: 40px;
+	margin: 10px 40px 10px 0px;
 }
 
 .principal button {
