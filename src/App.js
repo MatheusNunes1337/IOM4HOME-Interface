@@ -10,8 +10,8 @@ function App() {
   return (
   	 <Router> 
   	 	<Switch>
-  	 		<Route path="/" exact component={Bedroom1} />
-  	 		<Route path="/oi" component={Home} />
+  	 		<Route path="/ambiente/bedroom1" exact component={Bedroom1} />
+  	 		<Route path="/" component={Home} />
   	 	</Switch>	
   	 </Router>
   );

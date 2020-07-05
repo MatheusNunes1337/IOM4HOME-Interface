@@ -17,7 +17,7 @@ export default function Aside() {
 			<Link to="/aa" style={{ textDecoration: 'none'}}><button className="btn-nav">Função</button></Link>
 			<Link to="/ambientes" style={{ textDecoration: 'none' }}><button className="btn-nav">Ambiente</button></Link>
 			<FaCircle color="#1f703d" size="15px" /><span className="conection_status">Connected</span>
-			<img src={require('../assets/images/logo.png')} alt="logo"/>    
+			<img src={require('../assets/images/logo.png')} alt="logo" id="iom_logo" />    
         </aside>
   );
 }

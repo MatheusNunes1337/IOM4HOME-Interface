@@ -43,12 +43,14 @@ export default function Home() {
 						</ActionBtn>
 					</Link>		
 				</div>
-				<nav className="alertas">
-					<ul>
-						<li><img className="icone" src={require('../assets/images/termometro.png')}/><div><h2>Temperatura acima de 26°C</h2><span>Quarto 1</span><span> Ligar climatização?</span></div></li>
-						<li><img className="icone icone_baixo" src={require('../assets/images/lampada1.png')} /><div><h2>Luzes estão acesas há 2 horas</h2><span>Garagem</span><span> Apagar luzes?</span></div></li>
-					</ul>
-				</nav>
+				<div className="alertas">
+					<ActionBtn>
+						<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
+					</ActionBtn>
+					<ActionBtn>
+						<FaMedapps color="#c2c3bf" size="45px" />
+					</ActionBtn>
+				</div>
 			</main>
         </div>
         <Footer></Footer>

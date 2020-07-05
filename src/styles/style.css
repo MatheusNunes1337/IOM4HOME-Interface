@@ -53,10 +53,23 @@ h1{
 	width: 135px;
 	height: 135px;
 }
-.principal {
-	margin: 0px 80px;
-	max-width: 75vw;
+.principal, .alertas{
+	max-width: 80vw;
+
 }
+
+.principal {
+	margin-left: 80px;
+}
+
+.alertas {
+	margin-top: 75px;
+}
+
+.alertas .action_btn {
+	margin: 30px 0px;
+}
+
 
 /*testes kris*/
 .locais{
@@ -140,7 +153,6 @@ h1{
 
 }
 
-
 .btn-nav:hover {
 	background: #1f703d;
 	border: 2px solid #1f703d;
@@ -152,6 +164,7 @@ h1{
 	margin-top: -59px;
 	margin-left: 20px;
 	margin-right: 20px;
+
 }
 .user{
 	display: block;
@@ -165,8 +178,8 @@ h1{
 	border-radius: 50%;
 }
 .icone_user{
-	width: 68px;
-	height: 68px;
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	margin-top: 25px;
 	margin-left: -36px;
@@ -175,6 +188,20 @@ h1{
 	border: none;
 	outline: none;
 }
+
+#iom_logo {
+
+	display: block;
+	margin: 35px auto 0px auto;
+}
+
+.conection_status {
+	margin-left: 5px;
+	font-size: 22px;
+	color: #1f703d;
+	font-weight: bold;
+}
+
 .nome_user{
 	color: #6dc08b;
 	font-weight: bold;
@@ -235,9 +262,6 @@ h1{
 	margin-top: 15px;
 }
 
-.conection_status {
-	
-}
 
 @media (max-width: 660px){
 	
