@@ -232,6 +232,17 @@ h1{
 	flex-wrap: wrap;
 }
 
+/*
+.comodos {
+	background: red;
+}
+
+.funcoes {
+	background: lightblue;
+}
+
+*/
+
 
 .action_btn {
 	margin: 10px 40px 10px 0px;
@@ -263,7 +274,7 @@ h1{
 }
 
 
-@media (max-width: 660px){
+@media (max-width: 1024px){
 	
 	.topo h1 {
 		display: none;
@@ -280,15 +291,12 @@ h1{
 		display: block;
 	}
 	.btn-nav {
-		margin: auto;
-		margin-bottom: 10px;
+		margin: 18px auto;
+
 	}
 	.principal {
 		margin: auto;
 		width: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 	.locais ul {
 		text-align: center;
@@ -303,4 +311,35 @@ h1{
 		float: none;
 	}
 
+	.comodos, .funcoes {
+		justify-content: center;
+		width: 100%;
+		margin: 55px auto;
+	}
+
+	.action_btn {
+		margin: 15px;
+	}
+
+	.nome_user {
+		margin-top: 15px;
+	}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .comodos, .funcoes {
+		justify-content: flex-start;
+		/*width: 100%;*/
+		width: 80%;
+	}
+
+	.action_btn {
+		margin: 10px 15px;
+	}
+
+
+  
 }
