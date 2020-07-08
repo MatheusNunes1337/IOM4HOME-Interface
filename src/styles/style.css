@@ -71,74 +71,6 @@ h1{
 }
 
 
-/*testes kris*/
-.locais{
-	width: 100%;
-	display: block;
-}
-
-/*
-.locais ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	align-items: center;
-}
-.locais ul li{
-	display: inline-block;
-	margin-top: 10px;
-} 
-.locais ul li span{
-	display: block;
-	color: #249e50;
-	text-align: center;
-	font-size: 18px;
-}
-
-
-.alertas {
-	display: inline-flex;
-	margin: 0;
-	margin-top: -10px;
-	float: left;
-}
-.alertas ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.alertas ul li {
-	display: flex;
-	align-items: center;
-	margin-top: 30px;
-}
-.alertas ul li img{
-	float: left;
-}
-.alertas ul li div {
-	display: inline-block;
-	clear: both;
-}
-.alertas ul li div h2 {
-	margin: 0;
-	padding: 0;
-	color: #e66f54;
-}
-.alertas ul li div span {
-	background-color: #2b7747;
-	color: #FFF;
-	border-radius: 5px;
-	padding: 1px 8px;
-	display: inline-block;
-	font-size: 12px;
-}
-.alertas ul li div span:last-child {
-	background-color: transparent;
-	color: #e66f54;
-	font-size: 16px;
-}
-*/
 .btn-nav {
 	background-color: transparent;
 	border: 2px solid #c2c3bf;
@@ -232,16 +164,6 @@ h1{
 	flex-wrap: wrap;
 }
 
-/*
-.comodos {
-	background: red;
-}
-
-.funcoes {
-	background: lightblue;
-}
-
-*/
 
 
 .action_btn {
@@ -273,6 +195,37 @@ h1{
 	margin-top: 15px;
 }
 
+.alert_div {
+	display: flex;
+}
+
+.alert_div .bolacha {
+	height: 20%;
+	margin-top: 45px;
+	margin-left: 15px;
+}
+
+.bolacha h1 {
+	margin-left: 0px;
+	color: #e66f54;
+}
+
+.bolacha span {
+	text-align: left;
+	background-color: #2b7747;
+	color: #FFF;
+	border-radius: 5px;
+	padding: 1px 8px;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.bolacha span:last-child {
+	background-color: transparent;
+	color: #e66f54;
+	font-size: 16px;
+}
+
 
 @media (max-width: 1024px){
 	
@@ -298,23 +251,15 @@ h1{
 		margin: auto;
 		width: auto;
 	}
-	.locais ul {
-		text-align: center;
-	}
-	.alertas ul li {
-		display: block;
-		text-align: center;
-	}
-	.alertas ul li img {
-		display: block;
-		margin: auto;
-		float: none;
-	}
 
-	.comodos, .funcoes {
+	.comodos, .funcoes, .alertas {
 		justify-content: center;
 		width: 100%;
 		margin: 55px auto;
+	}
+
+	.alertas {
+		background: rgb(255,84,78);
 	}
 
 	.action_btn {
@@ -325,21 +270,38 @@ h1{
 		margin-top: 15px;
 	}
 
+	.alert_div {
+		flex-direction: column;
+		justify-content: center;
+		background: lightblue;
+		margin: auto;
+	}
+
+	.alert_div .action_button {
+		background: orange;
+		margin: 5px auto;
+	}
+
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  .comodos, .funcoes {
+  .comodos, .funcoes, .alertas {
 		justify-content: flex-start;
 		/*width: 100%;*/
 		width: 80%;
 	}
 
-	.action_btn {
+	.action_btn, .alert_div {
 		margin: 10px 15px;
 	}
 
+	.alert_div {
+		flex-direction: row;
+	}
+
+	
 
   
 }

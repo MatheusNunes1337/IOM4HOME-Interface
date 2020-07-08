@@ -44,12 +44,26 @@ export default function Home() {
 					</Link>		
 				</div>
 				<div className="alertas">
-					<ActionBtn>
-						<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
-					</ActionBtn>
-					<ActionBtn>
-						<FaMedapps color="#c2c3bf" size="45px" />
-					</ActionBtn>
+					<div className="alert_div">
+						<ActionBtn>
+							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
+						</ActionBtn>
+						<div className="bolacha">
+							<h1>Temperatura acima de 26°C</h1>
+							<span>Bedroom 1</span>
+							<span>Ligar climatização?</span>
+						</div>
+					</div>
+					<div className="alert_div">
+						<ActionBtn>
+							<FaMedapps color="#c2c3bf" size="45px" />
+						</ActionBtn>	
+						<div className="bolacha">
+							<h1>As luzes estão acesas há 2 horas</h1>
+							<span>Garagem</span>
+							<span>Desligar luzes?</span>
+						</div>
+					</div>
 				</div>
 			</main>
         </div>
