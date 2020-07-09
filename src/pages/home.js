@@ -48,8 +48,8 @@ export default function Home() {
 						<ActionBtn>
 							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
 						</ActionBtn>
-						<div className="bolacha">
-							<h1>Temperatura acima de 26°C</h1>
+						<div className="alert_message">
+							<p>Temperatura acima de 26°C</p>
 							<span>Bedroom 1</span>
 							<span>Ligar climatização?</span>
 						</div>
@@ -58,8 +58,8 @@ export default function Home() {
 						<ActionBtn>
 							<FaMedapps color="#c2c3bf" size="45px" />
 						</ActionBtn>	
-						<div className="bolacha">
-							<h1>As luzes estão acesas há 2 horas</h1>
+						<div className="alert_message">
+							<p>As luzes estão acesas há 2 horas</p>
 							<span>Garagem</span>
 							<span>Desligar luzes?</span>
 						</div>
