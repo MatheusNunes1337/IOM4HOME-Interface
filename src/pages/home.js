@@ -45,7 +45,7 @@ export default function Home() {
 				</div>
 				<div className="alertas">
 					<div className="alert_div">
-						<ActionBtn>
+						<ActionBtn equipamento="ar_condicionado">
 							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
 						</ActionBtn>
 						<div className="alert_message">
@@ -55,7 +55,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="alert_div">
-						<ActionBtn>
+						<ActionBtn equipamento="all_lamps">
 							<FaMedapps color="#c2c3bf" size="45px" />
 						</ActionBtn>	
 						<div className="alert_message">

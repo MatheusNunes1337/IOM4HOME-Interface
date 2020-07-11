@@ -39,25 +39,25 @@ export default function Bedroom1() {
 					</Link>	
 				</div>
 				<div className="funcoes">
-					<ActionBtn description="air conditioning">
+					<ActionBtn description="air conditioning" equipamento="ar_condicionado">
 						<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
 					</ActionBtn>
-					<ActionBtn description="lamp 1">
+					<ActionBtn description="lamp 1" equipamento="lamp_1">
 						<FaMedapps color="#c2c3bf" size="45px" />
 					</ActionBtn>
-					<ActionBtn description="lamp 2">
+					<ActionBtn description="lamp 2" equipamento="lamp_2">
 						<FaMedapps color="#c2c3bf" size="45px" />
 					</ActionBtn>
-					<ActionBtn description="lampshade">
+					<ActionBtn description="lampshade" equipamento="lampshade">
 						<FaMedapps color="#c2c3bf" size="45px" />
 					</ActionBtn>
-					<ActionBtn description="all lamps">
+					<ActionBtn description="all lamps" equipamento="all_lamps">
 						<FaMedapps color="#c2c3bf" size="45px" />
 					</ActionBtn>
-					<ActionBtn description="tv">
+					<ActionBtn description="tv" equipamento="tv">
 						<FaTv color="#c2c3bf" size="40px" />
 					</ActionBtn>
-					<ActionBtn description="sound">
+					<ActionBtn description="sound" equipamento="sound">
 						<FaMusic color="#c2c3bf" size="40px" />
 					</ActionBtn>	
 				</div>
