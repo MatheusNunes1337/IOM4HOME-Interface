@@ -17,7 +17,7 @@ export default function Bedroom1() {
         	<Aside></Aside>
         	<main className="principal">
 				<div className="comodos">
-					<Link to="/oi" style={{ textDecoration: 'none' }}>
+					<Link to="/ambiente/bedroom2" style={{ textDecoration: 'none' }}>
 						<ActionBtn description="bedroom 2">
 							<FaBed color="#c2c3bf" size="40px" />
 						</ActionBtn>
