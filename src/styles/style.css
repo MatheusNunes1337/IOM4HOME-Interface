@@ -71,7 +71,7 @@ h1{
 }
 
 
-.btn-nav {
+.btn-nav, .reconect_btn{
 	background-color: transparent;
 	border: 2px solid #c2c3bf;
 	color: #c2c3bf;
@@ -86,11 +86,20 @@ h1{
 
 }
 
+.reconect_btn {
+	background-color: crimson;
+	border: 2px solid crimson;
+	border: none;
+	color: white;
+}
+
 .btn-nav:hover {
 	background: #1f703d;
 	border: 2px solid #1f703d;
 	color: white;
 }
+
+
 .barra_lateral{
 	display: inline-table;
 	text-align: center;
@@ -180,6 +189,13 @@ h1{
 	color: black;
 	outline: none;
 	background: transparent;
+	
+}
+
+#btn_passa {
+	width: 70px;
+	height: 70px;
+	margin-top: 50px;
 }
 
 
@@ -283,6 +299,10 @@ h1{
 
 	.action_btn {
 		margin: 15px;
+	}
+
+	#btn_passa {
+		display: none;
 	}
 
 	.nome_user {

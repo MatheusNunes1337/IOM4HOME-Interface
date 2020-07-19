@@ -7,7 +7,8 @@ import ActionBtn from '../components/actionButton';
 import { Link } from 'react-router-dom'
 import '../styles/style.css';
 
-import { FaBed, FaMusic, FaMedapps, FaCouch, FaDesktop, FaTv, FaThermometerThreeQuarters, FaLaptop } from "react-icons/fa";
+import { FaBed, FaMusic, FaMedapps, FaCouch, FaDesktop, FaTv, 
+FaThermometerThreeQuarters, FaLaptop, FaAngleRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -41,7 +42,8 @@ export default function Home() {
 						<ActionBtn description="lighting">
 							<FaMedapps color="#c2c3bf" size="45px" />
 						</ActionBtn>
-					</Link>		
+					</Link>
+					<button id="btn_passa"><FaAngleRight color="#c2c3bf" size="26px" /></button>		
 				</div>
 				<div className="alertas">
 					<div className="alert_div">

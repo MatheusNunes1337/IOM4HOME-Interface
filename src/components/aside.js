@@ -8,10 +8,23 @@ import { FaChevronDown, FaCircle } from "react-icons/fa";
 export default function Aside() {
 
 	let button;
+	let connection_btn;
 
 
 	let [btn_funcao, setButton1] = useState('desativado');
 	let [btn_ambiente, setButton2] = useState('desativado');
+	let [connected, setConection] = useState(true)
+
+
+	
+	if(connected) {
+		connection_btn = <React.Fragment>
+							<FaCircle color="#1f703d" size="15px" />
+							<span className="conection_status">Connected</span>
+						</React.Fragment>
+	} else {
+		connection_btn = <button className="reconect_btn">Reconect</button>
+	}
 
 	function btnPushed(e) {
 		button = e.currentTarget.value;
@@ -47,7 +60,7 @@ export default function Aside() {
 			className={"btn-nav" + ' ' + btn_funcao} onClick={(e) => btnPushed(e)}>Função</button></Link>
 			<Link to="/ambientes" style={{ textDecoration: 'none' }}><button value="ambiente"
 			className={"btn-nav" + ' ' + btn_ambiente} onClick={(e) => btnPushed(e)}>Ambiente</button></Link>
-			<FaCircle color="#1f703d" size="15px" /><span className="conection_status">Connected</span>
+			{connection_btn}
 			<img src={require('../assets/images/logo.png')} alt="logo" id="iom_logo" />    
         </aside>
   );
