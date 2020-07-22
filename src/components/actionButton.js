@@ -3,6 +3,7 @@ import '../styles/style.css';
 
 export default function ActionBtn(props) {
 
+
 	let equipamento;
 
 	let [equip_status, setStatus] = useState('desligado');
@@ -27,7 +28,7 @@ export default function ActionBtn(props) {
   return (
 
 
-        <div className={'action_btn' + ' ' + equip_status}>
+    <div className={'action_btn' + ' ' + equip_status}>
 			<button onClick={(e) => props.equipamento ? turnOn(e) : ''} value={props.equipamento}>{props.children}</button>
 			<span>{props.description}</span>
 		</div>

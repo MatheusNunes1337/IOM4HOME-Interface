@@ -168,10 +168,17 @@ h1{
 }
 
 .comodos, .funcoes {
-	margin: 20px 0px;
 	margin-right: 40px;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.comodos {
+	margin: 30px 0px 50px 0px;
+}
+
+.funcoes {
+	margin: 10px 0px 40px 0px;
 }
 
 

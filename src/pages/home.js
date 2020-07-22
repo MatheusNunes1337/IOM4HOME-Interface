@@ -7,8 +7,8 @@ import ActionBtn from '../components/actionButton';
 import { Link } from 'react-router-dom'
 import '../styles/style.css';
 
-import { FaBed, FaMusic, FaMedapps, FaCouch, FaDesktop, FaTv, 
-FaThermometerThreeQuarters, FaLaptop, FaAngleRight } from "react-icons/fa";
+import { FaBed, FaMedapps, FaCouch, FaTv, 
+FaThermometerThreeQuarters, FaAngleRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -23,12 +23,12 @@ export default function Home() {
 							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
 						</ActionBtn>
 					</Link>
-					<Link to="/" style={{ textDecoration: 'none' }}>
+					<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}>
 						<ActionBtn description="bedroom 1">
 							<FaBed color="#c2c3bf" size="40px" />
 						</ActionBtn>
 					</Link>	
-					<Link to="/" style={{ textDecoration: 'none' }}>
+					<Link to="/ambiente/living_room" style={{ textDecoration: 'none' }}>
 						<ActionBtn description="living room 1">
 							<FaCouch color="#c2c3bf" size="40px" />
 						</ActionBtn>
