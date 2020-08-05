@@ -13,7 +13,7 @@ export default function Aside() {
 
 	let [btn_funcao, setButton1] = useState('desativado');
 	let [btn_ambiente, setButton2] = useState('desativado');
-	let [connected, setConection] = useState(true)
+	let [connected, setConection] = useState(false)
 
 
 	
@@ -58,7 +58,7 @@ export default function Aside() {
 			<span className="navegue">navegue por...</span>
 			<Link to="/aa" style={{ textDecoration: 'none'}}><button value="funcao"
 			className={"btn-nav" + ' ' + btn_funcao} onClick={(e) => btnPushed(e)}>Função</button></Link>
-			<Link to="/ambientes" style={{ textDecoration: 'none' }}><button value="ambiente"
+			<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}><button value="ambiente"
 			className={"btn-nav" + ' ' + btn_ambiente} onClick={(e) => btnPushed(e)}>Ambiente</button></Link>
 			{connection_btn}
 			<img src={require('../assets/images/logo.png')} alt="logo" id="iom_logo" />    
