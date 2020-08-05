@@ -167,13 +167,13 @@ h1{
 	/*margin-top: -100px;*/
 }
 
-.comodos, .funcoes {
+.comodo_section, .funcoes {
 	margin-right: 40px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.comodos {
+.comodo_section {
 	margin: 30px 0px 50px 0px;
 }
 
@@ -317,7 +317,7 @@ h1{
 	}
 
 
-	.comodos, .funcoes, .alertas {
+	.comodo_section, .funcoes, .alertas {
 		justify-content: center;
 		width: 100%;
 		margin: 55px auto;
@@ -351,7 +351,7 @@ h1{
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  .comodos, .funcoes, .alertas {
+  .comodo_section, .funcoes, .alertas {
 		justify-content: flex-start;
 		/*width: 100%;*/
 		width: 80%;
