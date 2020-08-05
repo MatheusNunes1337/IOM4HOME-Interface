@@ -19,37 +19,25 @@ export default function Home() {
         	<main className="principal">
 				<div className="comodos">
 					<Link to="/oi" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="air conditioning">
-							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="air conditioning" icon="ar"/>	
 					</Link>
 					<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="bedroom 1">
-							<FaBed color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="bedroom 1" icon="bed"/>
 					</Link>	
 					<Link to="/ambiente/living_room" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="living room 1">
-							<FaCouch color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="living room 1" icon="couch"/>
 					</Link>	
 					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="entertainment">
-							<FaTv color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="entertainment" icon="tv"/>
 					</Link>
 					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="lighting">
-							<FaMedapps color="#c2c3bf" size="45px" />
-						</ActionBtn>
+						<ActionBtn description="lighting" icon="lamp"/>
 					</Link>
 					<button id="btn_passa"><FaAngleRight color="#c2c3bf" size="26px" /></button>		
 				</div>
 				<div className="alertas">
 					<div className="alert_div">
-						<ActionBtn equipamento="ar_condicionado">
-							<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn equipamento="ar_condicionado" icon="ar"/>
 						<div className="alert_message">
 							<p>Temperatura acima de 26°C</p>
 							<span>Bedroom 1</span>
@@ -57,9 +45,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="alert_div">
-						<ActionBtn equipamento="all_lamps">
-							<FaMedapps color="#c2c3bf" size="45px" />
-						</ActionBtn>	
+						<ActionBtn equipamento="all_lamps" icon="lamp"/>	
 						<div className="alert_message">
 							<p>As luzes estão acesas há 2 horas</p>
 							<span>Garagem</span>

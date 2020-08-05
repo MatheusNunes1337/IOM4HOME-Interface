@@ -7,7 +7,6 @@ import ActionBtn from '../components/actionButton';
 import { Link } from 'react-router-dom'
 import '../styles/style.css';
 
-import { FaBed, FaMusic, FaMedapps, FaCouch, FaTv, FaThermometerThreeQuarters, FaLaptop } from "react-icons/fa";
 
 export default function Bedroom1() {
   return (
@@ -18,48 +17,27 @@ export default function Bedroom1() {
         	<main className="principal">
 				<div className="comodos">
 					<Link to="/ambiente/bedroom2" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="bedroom 2">
-							<FaBed color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="bedroom 2" icon="bed"/>	
 					</Link>
 					<Link to="/ambiente/living_room" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="living room">
-							<FaCouch color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="living room" icon="couch"/>
 					</Link>	
 					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="kitchen">
-							<FaMedapps color="#c2c3bf" size="45px" />
-						</ActionBtn>
+						<ActionBtn description="kitchen" icon="laptop"/>
 					</Link>	
 					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="office">
-							<FaLaptop color="#c2c3bf" size="40px" />
-						</ActionBtn>
+						<ActionBtn description="office" icon="laptop"/>
 					</Link>	
 				</div>
 				<div className="funcoes">
-					<ActionBtn description="air conditioning" equipamento="ar_condicionado">
-						<FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
-					</ActionBtn>
-					<ActionBtn description="lamp 1" equipamento="lamp_1">
-						<FaMedapps color="#c2c3bf" size="45px" />
-					</ActionBtn>
-					<ActionBtn description="lamp 2" equipamento="lamp_2">
-						<FaMedapps color="#c2c3bf" size="45px" />
-					</ActionBtn>
-					<ActionBtn description="lampshade" equipamento="lampshade">
-						<FaMedapps color="#c2c3bf" size="45px" />
-					</ActionBtn>
-					<ActionBtn description="all lamps" equipamento="all_lamps">
-						<FaMedapps color="#c2c3bf" size="45px" />
-					</ActionBtn>
-					<ActionBtn description="tv" equipamento="tv">
-						<FaTv color="#c2c3bf" size="40px" />
-					</ActionBtn>
-					<ActionBtn description="sound" equipamento="sound">
-						<FaMusic color="#c2c3bf" size="40px" />
-					</ActionBtn>	
+					<ActionBtn description="air conditioning" equipamento="ar_condicionado" icon="ar"/>
+					<ActionBtn description="lamp 1" equipamento="lamp_1" icon="lamp"/>
+					<ActionBtn description="lamp 2" equipamento="lamp_2" icon="lamp"/>
+					<ActionBtn description="lampshade" equipamento="lampshade" icon="lamp"/>
+					<ActionBtn description="all lamps" equipamento="all_lamps" icon="lamp" />
+					<ActionBtn description="tv" equipamento="tv" icon="tv"/>
+					<ActionBtn description="sound" equipamento="sound" icon="sound"/>
+							
 				</div>
 
 			</main>
