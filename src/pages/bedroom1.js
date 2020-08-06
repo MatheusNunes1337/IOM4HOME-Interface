@@ -16,7 +16,7 @@ export default function Bedroom1() {
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
-        		<Comodos itens={['bedroom2', 'livingRoom', 'kitchen', 'office', 'bedroom3']} />
+        		<Comodos itens={['bedroom 2', 'living room', 'kitchen', 'office', 'bedroom 3']} />
 				<div className="funcoes">
 					<ActionBtn description="air conditioning" equipamento="ar_condicionado" icon="ar"/>
 					<ActionBtn description="lamp 1" equipamento="lamp_1" icon="lamp"/>
@@ -24,10 +24,8 @@ export default function Bedroom1() {
 					<ActionBtn description="lampshade" equipamento="lampshade" icon="lamp"/>
 					<ActionBtn description="all lamps" equipamento="all_lamps" icon="lamp" />
 					<ActionBtn description="tv" equipamento="tv" icon="tv"/>
-					<ActionBtn description="sound" equipamento="sound" icon="sound"/>
-							
+					<ActionBtn description="sound" equipamento="sound" icon="sound"/>		
 				</div>
-
 			</main>
         </div>
         <Footer></Footer>

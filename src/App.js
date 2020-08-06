@@ -14,7 +14,7 @@ function App() {
   	 		<Route path="/ambiente/bedroom1">
   	 			<Bedroom1 />
   	 		</Route>
-  	 		<Route path="/ambiente/livingRoom">
+  	 		<Route path="/ambiente/living_room">
   	 			<LivingRoom />
   	 		</Route>
   	 		<Route path="/">

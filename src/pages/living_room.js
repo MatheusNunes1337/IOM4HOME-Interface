@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
 import ActionBtn from '../components/actionButton';
+import Comodos from '../components/comodos'
 
 import { Link } from 'react-router-dom'
 import '../styles/style.css';
@@ -15,20 +16,7 @@ export default function LivingRoom() {
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
-				<div className="comodos">
-					<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="bedroom 1" icon="bed"/>
-					</Link>
-					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="bedroom 2" icon="bed"/>	
-					</Link>	
-					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="kitchen" icon="lamp"/>
-					</Link>	
-					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="office" icon="laptop"/>
-					</Link>	
-				</div>
+        		<Comodos itens={['bedroom 1', 'bedroom 2', 'kitchen', 'office']} />
 				<div className="funcoes">
 					<ActionBtn description="air conditioning" equipamento="ar_condicionado" icon="ar"/>
 					<ActionBtn description="lamp 1" equipamento="lamp_1" icon="lamp"/>

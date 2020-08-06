@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
 import ActionBtn from '../components/actionButton';
+import Comodos from '../components/comodos'
 
 import { Link } from 'react-router-dom'
 import '../styles/style.css';
@@ -17,24 +18,7 @@ export default function Home() {
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
-				<div className="comodos">
-					<Link to="/oi" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="air conditioning" icon="ar"/>	
-					</Link>
-					<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="bedroom 1" icon="bed"/>
-					</Link>	
-					<Link to="/ambiente/living_room" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="living room 1" icon="couch"/>
-					</Link>	
-					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="entertainment" icon="tv"/>
-					</Link>
-					<Link to="/" style={{ textDecoration: 'none' }}>
-						<ActionBtn description="lighting" icon="lamp"/>
-					</Link>
-					<button id="btn_passa"><FaAngleRight color="#c2c3bf" size="26px" /></button>		
-				</div>
+        		<Comodos itens={['air conditioning', 'bedroom 1', 'living room', 'entertainment', 'lighting']} />		
 				<div className="alertas">
 					<div className="alert_div">
 						<ActionBtn equipamento="ar_condicionado" icon="ar"/>

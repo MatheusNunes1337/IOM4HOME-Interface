@@ -5,33 +5,59 @@ import { Link } from 'react-router-dom'
 
 export default function Comodos(props) {
 
-	let aux = [];
+	let comodos = [];
 	let icone
-	console.log(props.itens)
-	props.itens.forEach(pushComodo)
+	let formatted
 
-	function pushComodo(comodo) {
+	props.itens.map(pushComodo)
+
+	function pushComodo(comodo, i) {
+
+		let formatted = comodo.split(" ");
+		if(formatted.length === 2) {
+			if(formatted[1].length !== 1) {
+				formatted =  formatted.join('_')
+			} else {
+				formatted =  formatted.join(' ').replace(/\s/g, '')
+				console.log(formatted)
+			}
+		}
+
 		
-		if(comodo === 'bedroom1' || comodo === 'bedroom2') {
-			icone = 'bed'
-		} else if(comodo === 'kitchen' || comodo === 'office') {
-			icone = 'laptop'
-		}
-		else if(comodo === 'livingRoom') {
-			icone = 'couch'
+		const iniciais = comodo.slice(0,3)
+
+		switch (iniciais) {
+			case 'bed':
+				icone = 'bed'
+				break
+			case 'off':
+				icone = 'laptop'
+				break
+			case 'liv':
+				icone = 'couch'
+				break
+			case 'air':
+				icone = 'ar'
+				break
+			case 'ent':
+				icone = 'tv'
+				break
+			case 'lig':
+				icone = 'lamp'
+				break					
 		}
 
-		aux.push(<Link to={`/ambiente/${comodo}`} style={{ textDecoration: 'none' }}>
+		
+
+		comodos.push(<Link to={`/ambiente/${formatted}`} key={i} style={{ textDecoration: 'none' }}>
 					<ActionBtn description={comodo} icon={icone}/>	
 				</Link>)
 	}
 
-	console.log(aux)
-
 
 	return (
 		<div className="comodo_section">
-			{aux}
+			{comodos}
 		</div>
 	);
 }
