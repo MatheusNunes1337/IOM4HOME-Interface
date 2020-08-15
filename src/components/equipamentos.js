@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/style.css';
 import ActionBtn from './actionButton'
-import { Link } from 'react-router-dom'
 
 export default function Equipamentos(props) {
 

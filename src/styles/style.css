@@ -25,6 +25,11 @@ h1{
 	position: absolute;*/
 }
 
+.botao:focus {
+	background: #1f703d;
+	border: 2px solid #1f703d;
+} 
+
 
 .topo{
 	width: 100%;

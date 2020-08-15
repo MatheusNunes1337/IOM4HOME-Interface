@@ -2,11 +2,9 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
-import ActionBtn from '../components/actionButton';
 import Comodos from '../components/comodos'
 import Equipamentos from '../components/equipamentos'
 
-import { Link } from 'react-router-dom'
 import '../styles/style.css';
 
 

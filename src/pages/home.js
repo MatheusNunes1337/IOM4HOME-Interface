@@ -5,11 +5,8 @@ import Aside from '../components/aside';
 import ActionBtn from '../components/actionButton';
 import Comodos from '../components/comodos'
 
-import { Link } from 'react-router-dom'
 import '../styles/style.css';
 
-import { FaBed, FaMedapps, FaCouch, FaTv, 
-FaThermometerThreeQuarters, FaAngleRight } from "react-icons/fa";
 
 export default function Home() {
   return (

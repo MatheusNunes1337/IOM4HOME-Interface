@@ -23,7 +23,7 @@ export default function Aside() {
 							<span className="conection_status">Connected</span>
 						</React.Fragment>
 	} else {
-		connection_btn = <button className="reconect_btn">Reconect</button>
+		connection_btn = <button className="reconect_btn + ' ' + botao">Reconect</button>
 	}
 
 	function btnPushed(e) {
@@ -52,14 +52,14 @@ export default function Aside() {
         <aside className="barra_lateral">
         	<div className="user">
 				<img className="img_user" src={require('../assets/images/vini.png')} alt="imagem de perfil"/>
-				<button className="icone_user"><FaChevronDown color="#c2c3bf" size="20px" /></button>
+				<button className="icone_user + ' ' + botao"><FaChevronDown color="#c2c3bf" size="20px" /></button>
 			</div>
 			<span className="nome_user">Vinícios da Costa</span>
 			<span className="navegue">navegue por...</span>
 			<Link to="/aa" style={{ textDecoration: 'none'}}><button value="funcao"
-			className={"btn-nav" + ' ' + btn_funcao} onClick={(e) => btnPushed(e)}>Função</button></Link>
+			className={"btn-nav" + ' ' + btn_funcao + ' ' + "botao"} onClick={(e) => btnPushed(e)}>Função</button></Link>
 			<Link to="/ambiente/bedroom1" style={{ textDecoration: 'none' }}><button value="ambiente"
-			className={"btn-nav" + ' ' + btn_ambiente} onClick={(e) => btnPushed(e)}>Ambiente</button></Link>
+			className={"btn-nav" + ' ' + btn_ambiente + ' ' + "botao"} onClick={(e) => btnPushed(e)}>Ambiente</button></Link>
 			{connection_btn}
 			<img src={require('../assets/images/logo.png')} alt="logo" id="iom_logo" />    
         </aside>

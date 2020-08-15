@@ -9,7 +9,6 @@ export default function ActionBtn(props) {
   switch(props.icon) {
     case 'bed' :
       icon = <FaBed color="#c2c3bf" size="40px" />
-      console.log('oi')
       break
     case 'ar':
       icon = <FaThermometerThreeQuarters color="#c2c3bf" size="40px" />
@@ -37,11 +36,12 @@ export default function ActionBtn(props) {
 	let [equip_status, setStatus] = useState('desligado');
 	
 	function turnOn(e) {
-		//equipamento = e.currentTarget.value;
+		equipamento = e.currentTarget.value;
 
   		if(equip_status === 'desligado') {
   			//faz a chamada da api
   			setStatus(equip_status = 'ligado');
+        console.log(`liguei o ${equipamento}`)
   			
   		} else {
   			turnOff(e)
@@ -50,13 +50,14 @@ export default function ActionBtn(props) {
 
   	function turnOff(e) {
   		setStatus(equip_status = 'desligado');
+      console.log(`desliguei o ${equipamento}`)
   	}
 
   return (
 
 
     <div className={'action_btn' + ' ' + equip_status}>
-			<button onClick={(e) => props.equipamento ? turnOn(e) : ''} value={props.equipamento}>{icon}</button>
+			<button className="botao" onClick={(e) => props.equipamento ? turnOn(e) : ''} value={props.equipamento}>{icon}</button>
 			<span>{props.description}</span>
 		</div>
   );
