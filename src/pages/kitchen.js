@@ -8,15 +8,15 @@ import Equipamentos from '../components/equipamentos'
 import '../styles/style.css';
 
 
-export default function Bedroom1() {
+export default function Kitchen() {
   return (
     <div>
-        <Header>Home > Ambiente > Bedroom 1</Header>
+        <Header>Home > Ambiente > Kitchen</Header>
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
-        		<Comodos itens={['bedroom 2', 'living room', 'kitchen', 'bathroom', 'office']} />
-        		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lamp 2', 'lampshade', 'all lamps', 'tv', 'sound']} />
+        		<Comodos itens={['bedroom 1', 'bedroom 2', 'living room', 'bathroom', 'office']} />
+        		<Equipamentos equipamentos={['lamp 1', 'lamp 2']} />
 			</main>
         </div>
         <Footer></Footer>

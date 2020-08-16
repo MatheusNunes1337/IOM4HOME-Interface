@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/style.css';
 
-import { FaBed, FaMusic, FaMedapps, FaCouch, FaTv, FaThermometerThreeQuarters, FaLaptop } from "react-icons/fa";
+import { FaBed, FaMusic, FaMedapps, FaCouch, FaTv, FaThermometerThreeQuarters, FaLaptop, FaBath } from "react-icons/fa";
 
 export default function ActionBtn(props) {
 
@@ -27,7 +27,13 @@ export default function ActionBtn(props) {
       break
     case 'couch':
       icon = <FaCouch color="#c2c3bf" size="40px" /> 
-      break         
+      break
+    case 'bath':
+      icon =  <FaBath color="#c2c3bf" size="40px" />
+      break
+    default: 
+      icon = <FaMusic color="#c2c3bf" size="40px" />
+                 
   }
 
 

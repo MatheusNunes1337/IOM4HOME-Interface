@@ -44,7 +44,12 @@ export default function Comodos(props) {
 				break
 			case 'lig':
 				icone = 'lamp'
-				break					
+				break
+			case 'bat':
+				icone = 'bath'
+				break
+			default: 
+				icone = 'tv'	
 		}
 
 		

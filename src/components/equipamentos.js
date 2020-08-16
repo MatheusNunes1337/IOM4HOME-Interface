@@ -35,7 +35,13 @@ export default function Equipamentos(props) {
 				break
 			case 'sou':
 				icone = 'sound'
-				break					
+				break
+			case 'com':
+				icone = 'laptop'
+				break
+			case 'lap':
+				icone = 'laptop'
+				break							
 		}
 
 		equipamentos.push(<ActionBtn description={equip} key={i} equipamento={formatted} icon={icone}/>)
