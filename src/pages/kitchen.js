@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
@@ -9,6 +9,34 @@ import '../styles/style.css';
 
 
 export default function Kitchen() {
+
+      let [count, setCount] = useState(0);
+      
+
+      function incrementar() {
+        if(count === document.getElementsByClassName("botao").length - 1) 
+          setCount(count = 0)    
+        else     
+          setCount(count + 1)
+      }
+
+      function decrementar() {
+        if(count === 0) 
+          setCount(count = document.getElementsByClassName("botao").length - 1)
+        else     
+         setCount(count - 1) 
+      }
+
+      function clicar() {
+          document.getElementsByClassName("botao")[count].click()
+      }
+
+      useEffect(() => {
+        let btn;  
+        btn = document.getElementsByClassName("botao")[count]
+        btn.focus();
+      }, [count]);
+
   return (
     <div>
         <Header>Home > Ambiente > Kitchen</Header>
@@ -19,6 +47,9 @@ export default function Kitchen() {
         		<Equipamentos equipamentos={['lamp 1', 'lamp 2']} />
 			</main>
         </div>
+        <button onClick={incrementar}>right</button>
+        <button onClick={decrementar}>left</button>
+        <button onClick={clicar}>click</button>
         <Footer></Footer>
     </div>
   );

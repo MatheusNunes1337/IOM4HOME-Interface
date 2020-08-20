@@ -10,7 +10,6 @@ import '../styles/style.css';
 export default function LivingRoom() {
 
   let [count, setCount] = useState(0);
-  let btn;
 
   function incrementar() {
     if(count === document.getElementsByClassName("botao").length - 1) 
@@ -27,10 +26,11 @@ export default function LivingRoom() {
   }
 
   function clicar() {
-      btn.click()
+      document.getElementsByClassName("botao")[count].click()
   }
 
   useEffect(() => {
+    let btn;  
     btn = document.getElementsByClassName("botao")[count]
     btn.focus();
   }, [count]);
@@ -45,10 +45,10 @@ export default function LivingRoom() {
         		<Comodos itens={['bedroom 1', 'bedroom 2', 'kitchen', 'bathroom', 'office']} />
         		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lamp 2', 'all lamps', 'tv', 'sound']} />
 			</main>
-            <button onClick={incrementar}>incriment</button>
-            <button onClick={decrementar}>decrement</button>
-            <button onClick={clicar}>clicar</button>
         </div>
+        <button onClick={incrementar}>right</button>
+            <button onClick={decrementar}>left</button>
+            <button onClick={clicar}>click</button>
         <Footer></Footer>
     </div>
   );
