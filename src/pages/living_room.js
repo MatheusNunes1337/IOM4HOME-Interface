@@ -1,39 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
 import Comodos from '../components/comodos'
 import Equipamentos from '../components/equipamentos'
 
+import { Context } from '../contexts/buttonContext'
+
 import '../styles/style.css';
 
 export default function LivingRoom() {
 
-  let [count, setCount] = useState(0);
-
-  function incrementar() {
-    if(count === document.getElementsByClassName("botao").length - 1) 
-      setCount(count = 0)    
-    else     
-      setCount(count + 1)
-  }
-
-  function decrementar() {
-    if(count === 0) 
-      setCount(count = document.getElementsByClassName("botao").length - 1)
-    else     
-     setCount(count - 1) 
-  }
-
-  function clicar() {
-      document.getElementsByClassName("botao")[count].click()
-  }
+  const { index, setMovement, setIndex } = useContext(Context)
 
   useEffect(() => {
-    let btn;  
-    btn = document.getElementsByClassName("botao")[count]
+    let btn;
+    btn = document.getElementsByClassName("botao")[index]
     btn.focus();
-  }, [count]);
+  }, [index]);
+
+  useEffect(() => {
+    setIndex(0)
+  }, []);
 
 
   return (
@@ -44,11 +32,13 @@ export default function LivingRoom() {
         	<main className="principal">
         		<Comodos itens={['bedroom 1', 'bedroom 2', 'kitchen', 'bathroom', 'office']} />
         		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lamp 2', 'all lamps', 'tv', 'sound']} />
-			</main>
+            <div className="simulador_wrapper">
+                <button value="LEFT" onClick={setMovement}>Left</button>
+                 <button value="TOP" onClick={setMovement}>Top</button>
+                 <button value="RIGHT" onClick={setMovement}>Right</button>
+             </div>
+			    </main>
         </div>
-        <button onClick={incrementar}>right</button>
-            <button onClick={decrementar}>left</button>
-            <button onClick={clicar}>click</button>
         <Footer></Footer>
     </div>
   );

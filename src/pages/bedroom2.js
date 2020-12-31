@@ -1,41 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Aside from '../components/aside';
 import Comodos from '../components/comodos'
 import Equipamentos from '../components/equipamentos'
 
+//context
+
+import  { Context } from '../contexts/buttonContext'
+
 import '../styles/style.css';
 
 
 export default function Bedroom2() {
 
-    let [count, setCount] = useState(0);
-    
+  const { index, setMovement, setIndex } = useContext(Context)
 
-      function incrementar() {
-        if(count === document.getElementsByClassName("botao").length - 1) 
-          setCount(count = 0)    
-        else     
-          setCount(count + 1)
-      }
+  useEffect(() => {
+    let btn;
+    btn = document.getElementsByClassName("botao")[index]
+    btn.focus();
+  }, [index]);
 
-      function decrementar() {
-        if(count === 0) 
-          setCount(count = document.getElementsByClassName("botao").length - 1)
-        else     
-         setCount(count - 1) 
-      }
-
-      function clicar() {
-          document.getElementsByClassName("botao")[count].click()
-      }
-
-      useEffect(() => {
-        let btn;
-        btn = document.getElementsByClassName("botao")[count]
-        btn.focus();
-      }, [count]);
+  useEffect(() => {
+    setIndex(0)
+  }, []);
 
   return (
     <div>
@@ -45,11 +34,13 @@ export default function Bedroom2() {
         	<main className="principal">
         		<Comodos itens={['bedroom 1', 'living room', 'kitchen', 'bathroom', 'office']} />
         		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lampshade', 'all lamps', 'tv', 'sound']} />
-			</main>
-        </div>
-        <button onClick={incrementar}>right</button>
-        <button onClick={decrementar}>left</button>
-        <button onClick={clicar}>click</button>
+            <div className="simulador_wrapper">
+                 <button value="LEFT" onClick={setMovement}>Left</button>
+                 <button value="TOP" onClick={setMovement}>Top</button>
+                 <button value="RIGHT" onClick={setMovement}>Right</button>
+             </div>
+			    </main>
+       </div>
         <Footer></Footer>
     </div>
   );
