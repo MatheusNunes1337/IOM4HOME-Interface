@@ -2,10 +2,14 @@ import React from 'react';
 
 import Routes from './routes/routes.js'
 
+import { ButtonProvider } from './contexts/buttonContext'
+
 
 function App() {
   return (
-  	 <Routes/>
+  	<ButtonProvider>
+  	 	<Routes/>
+  	</ButtonProvider>
   );
 }
 

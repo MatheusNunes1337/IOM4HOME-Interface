@@ -10,12 +10,12 @@ import Office from '../pages/office';
 import Home from '../pages/home';
 import LivingRoom from '../pages/living_room';
 
-import { ButtonProvider } from '../contexts/buttonContext'
+
 
 export default function Routes() {
 
 	return (
-		<ButtonProvider>
+		
 			<Router> 
 	  	 		<Switch>
 		  	 		<Route path="/ambiente/bedroom1">
@@ -41,6 +41,6 @@ export default function Routes() {
 		  	 		</Route>
 	  	 		</Switch>	
 	  	 	</Router>
-  	 	</ButtonProvider>
+  	 	
 	)
 }
