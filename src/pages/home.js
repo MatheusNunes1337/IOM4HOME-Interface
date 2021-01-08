@@ -47,7 +47,7 @@ export default function Home() {
 
  
     return (
-      <div>
+      <div onKeyPress={setMovement} tabIndex={-1}>
           <Header>Home</Header>
           <div className="conteudo">
           	<Aside></Aside>
@@ -71,11 +71,6 @@ export default function Home() {
           						</div>
           					</div>
       				  </div>
-                <div className="simulador_wrapper">
-                   <button value="LEFT" onClick={setMovement}>Left</button>
-                   <button value="TOP" onClick={setMovement}>Top</button>
-                   <button value="RIGHT" onClick={setMovement}>Right</button>
-               </div>
   			    </main>  
           </div>
           <Footer></Footer>

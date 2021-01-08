@@ -25,18 +25,13 @@ export default function Office() {
   }, []);
 
   return (
-    <div>
+    <div onKeyPress={setMovement} tabIndex={-1}>
         <Header>Home > Ambiente > Office</Header>
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
         		<Comodos itens={['bedroom 2', 'living room', 'kitchen', 'bathroom', 'bedroom 3']} />
         		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lamp 2', 'lampshade', 'all lamps', 'computer']} />
-            <div className="simulador_wrapper">
-                <button value="LEFT" onClick={setMovement}>Left</button>
-                 <button value="TOP" onClick={setMovement}>Top</button>
-                 <button value="RIGHT" onClick={setMovement}>Right</button>
-             </div>
 			    </main>
         </div>
         <Footer></Footer>

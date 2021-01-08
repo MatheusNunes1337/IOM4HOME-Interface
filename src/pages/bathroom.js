@@ -26,18 +26,13 @@ export default function Bathroom() {
 
   return (
     <ButtonProvider>
-      <div>
+      <div onKeyPress={setMovement} tabIndex={-1}>
           <Header>Home > Ambiente > Bathroom</Header>
           <div className="conteudo">
             	<Aside></Aside>
             	<main className="principal">
             		<Comodos itens={['bedroom 1', 'bedroom 2', 'living room', 'kitchen', 'office']} />
             		<Equipamentos equipamentos={['lamp 1', 'lamp 2']} />
-                  <div className="simulador_wrapper">
-                      <button value="LEFT" onClick={setMovement}>Left</button>
-                      <button value="TOP" onClick={setMovement}>Top</button>
-                      <button value="RIGHT" onClick={setMovement}>Right</button>
-                   </div>
     			    </main>
           </div>
           <Footer></Footer>

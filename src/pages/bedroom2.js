@@ -27,18 +27,13 @@ export default function Bedroom2() {
   }, []);
 
   return (
-    <div>
+    <div onKeyPress={setMovement} tabIndex={-1}>
         <Header>Home > Ambiente > Bedroom 2</Header>
         <div className="conteudo">
         	<Aside></Aside>
         	<main className="principal">
         		<Comodos itens={['bedroom 1', 'living room', 'kitchen', 'bathroom', 'office']} />
         		<Equipamentos equipamentos={['air conditioning', 'lamp 1', 'lampshade', 'all lamps', 'tv', 'sound']} />
-            <div className="simulador_wrapper">
-                 <button value="LEFT" onClick={setMovement}>Left</button>
-                 <button value="TOP" onClick={setMovement}>Top</button>
-                 <button value="RIGHT" onClick={setMovement}>Right</button>
-             </div>
 			    </main>
        </div>
         <Footer></Footer>
