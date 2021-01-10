@@ -5,45 +5,24 @@ import Aside from '../components/aside';
 import ActionBtn from '../components/actionButton';
 import Comodos from '../components/comodos'
 
-//import { Context } from '../contexts/buttonContext'
+import { Context } from '../contexts/buttonContext'
 
 import '../styles/style.css';
 
 
 export default function Home() {
 
-	let [index, setIndex] = useState(0)
+	const { index, setMovement, setIndex } = useContext(Context)
 
-    function setMovement(e) {
-      const movement = e.currentTarget.value
-      console.log(document.getElementsByClassName('botao'))
+    useEffect(() => {
+      let btn;
+      btn = document.getElementsByClassName("botao")[index]
+      btn.focus();
+    }, [index]);
 
-      if(movement === 'LEFT') {
-         if(index === 0) {
-            setIndex(document.getElementsByClassName("botao").length - 1)
-         } else {
-           setIndex(index - 1)
-         }
-      } else if(movement === 'RIGHT') {
-          if(index === document.getElementsByClassName("botao").length - 1) {
-            setIndex(0)
-         } else {
-           setIndex(index + 1)
-         }
-      } else {
-          document.getElementsByClassName('botao')[index].click()
-          document.getElementsByClassName('botao')[index].focus()
-      }
-    }
-
-  useEffect(() => {
-    let btn = document.getElementsByClassName("botao")[index]
-    btn.focus();
-  }, [index]);
-
-  useEffect(() => {
-    setIndex(0)
-  }, []);
+    useEffect(() => {
+      setIndex(0)
+    }, []);
 
  
     return (
