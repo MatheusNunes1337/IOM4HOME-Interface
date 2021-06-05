@@ -12,7 +12,7 @@ import '../styles/style.css';
 
 export default function Home() {
 
-	const { index, setMovement, setIndex } = useContext(Context)
+	const { index, handleMovement, setIndex } = useContext(Context)
 
     useEffect(() => {
       let btn;
@@ -24,9 +24,14 @@ export default function Home() {
       setIndex(0)
     }, []);
 
+    function getMovement(event) {
+       const movement = event.key
+       handleMovement(movement)
+    }
+
  
     return (
-      <div onKeyPress={setMovement} tabIndex={-1}>
+      <div onKeyPress={getMovement} tabIndex={-1}>
           <Header>Home</Header>
           <div className="conteudo">
           	<Aside></Aside>
