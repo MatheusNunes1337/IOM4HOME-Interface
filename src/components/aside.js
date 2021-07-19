@@ -54,7 +54,7 @@ export default function Aside() {
 				<img className="img_user" src={require('../assets/images/user-icon.png')} alt="imagem de perfil"/>
 				<button className="icone_user + ' ' + botao"><FaChevronDown color="#c2c3bf" size="20px" /></button>
 			</div>
-			<span className="nome_user">Davante Collier</span>
+			<span className="nome_user">Usuário 01</span>
 			<span className="navegue">navegue por...</span>
 			<Link to="/aa" style={{ textDecoration: 'none'}}><button value="funcao"
 			className={"btn-nav" + ' ' + btn_funcao + ' ' + "botao"} onClick={(e) => btnPushed(e)}>Função</button></Link>
